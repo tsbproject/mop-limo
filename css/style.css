@@ -536,7 +536,8 @@ body {
   font-weight: 500; }
 
 .bi-list-nested {
-  font-size: 3.5rem; }
+  font-size: 2.5rem;
+  color: #deb887; }
 
 .navbar-brand {
   width: 14rem;
