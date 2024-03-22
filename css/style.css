@@ -175,7 +175,7 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.2); }
+  box-shadow: 0 1rem 2rem rgba(222, 184, 135, 0.2); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0; }
@@ -183,7 +183,7 @@ body {
 .btn:active, .btn:focus {
   outline: none;
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2); }
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--white {
   background-color: #ffffff;
@@ -300,6 +300,10 @@ body {
     font-size: 1.3rem;
     position: relative;
     bottom: 5rem; } }
+
+.carousel-caption__btn {
+  position: relative;
+  bottom: 53rem; }
 
 .section-contact--heading3 {
   font-size: 1.8rem;
