@@ -19,7 +19,7 @@
   &__img {
  
     // height: 130vh 
-    height: 131.7vh;
+     height: 131.7vh;
     filter: brightness(40%);
 
 
@@ -31,7 +31,7 @@
   
     @include for-phone-only {
       @media (max-width: 576px) {
-        height: 39rem;
+        max-height: 39rem;
        }
     }
     @include for-tablet-portrait-up {
