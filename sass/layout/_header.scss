@@ -1,0 +1,55 @@
+
+#header {
+    transition: transform 0.3s ease-in-out;
+    
+  }
+
+
+.navbar {
+    height: 8rem;
+    font-size:2rem;
+    font-weight: 500;
+
+    }
+
+    
+   
+.bi-list-nested {
+    font-size: 3.5rem;
+}
+       
+
+         
+       
+
+
+.navbar-brand {
+    width: $navbar-brand-width;
+    height: $navbar-brand-height;
+}
+
+
+
+.site-logo {
+    width: $logo-width;
+    height: $logo-height;
+}
+
+
+.home__text-box {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        @include for-tablet-portrait-up {
+            @media (max-width: 768px) {
+              margin-top: 8rem;
+            }
+          }
+        
+      
+}
+

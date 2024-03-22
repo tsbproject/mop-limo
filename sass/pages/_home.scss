@@ -1,0 +1,187 @@
+
+#section1 {
+    height: 100rem;
+     
+
+
+   
+
+      @include for-phone-only {
+        @media (max-width: 576px) {
+            height: 60rem;
+            background-size: cover
+          
+           
+           
+           
+        }
+      }
+
+
+      @include for-tablet-portrait-up {
+        @media (max-width: 768px) {
+            height: 42rem;
+            background-size: cover;
+          //  background-position: center;
+        
+           
+           
+           
+        }
+      }
+
+      @include for-tablet-landscape-up {
+        @media (min-width: 992px) {
+            height: 70rem;
+            background-size: cover;
+            background-position: center;
+           
+         
+         }
+      }
+
+      
+
+
+
+   }
+
+   
+
+   
+
+  
+   
+
+
+   #section2 {
+    height: 50rem;
+
+@include for-phone-only {
+  @media (max-width: 576px) { 
+      height: 200rem;
+   }
+    
+  }
+
+  @include for-phone-only {
+    @media (max-width: 468px) {
+      // height: 250rem;
+     
+      
+    
+     }
+  }
+
+  @include for-tablet-portrait-up {
+    @media (max-width: 768px) { 
+      height: 140rem;
+    
+    }
+  }
+
+
+  @include for-tablet-landscape-up {
+    @media (max-width: 992px) { 
+      height: 125rem;
+
+    }
+  }
+}
+      
+    
+
+
+
+#section3 {
+    height: 80rem;
+    background-color: $color-primary-black;
+
+
+    @include for-phone-only {
+      @media (max-width: 576px) { 
+        height: 140rem;
+          
+       }
+        
+      }
+    
+      @include for-phone-only {
+        @media (max-width: 468px) {
+          height: 140rem;
+         
+          
+        
+         }
+      }
+    
+      @include for-tablet-portrait-up {
+        @media (max-width: 768px) { 
+          height: 170rem;
+        
+        }
+      }
+    
+    
+      @include for-tablet-landscape-up {
+        @media (max-width: 992px) { 
+          height: 212rem;
+    
+        }
+      }
+    
+}
+
+
+
+#section4 {
+    height: 60rem;
+    
+}
+
+
+
+#section5 {
+  height: 100rem;
+  background-color: $color-primary-black;
+  background-image:
+  linear-gradient( to right bottom,
+  rgba($color-primary-black, 1.0), 
+  rgba($color-primary-black, 0.8)),
+  url("../images/picture-danny7.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+
+  @include for-tablet-portrait-up {
+    @media (min-width: 768px) {
+      height: 60rem;
+
+    }
+  }
+  
+  
+  @include for-tablet-landscape-up {
+    @media (min-width: 992px) {
+      height: 75rem;
+
+    }
+  }
+  @include for-desktop-up {
+    @media (min-width: 1200px) {
+      height: 75rem;
+
+    }
+  }
+  @include for-big-desktop-up {
+    @media (min-width: 1400px) {
+      height: 75rem;
+
+    }
+  }
+  
+}
+
+

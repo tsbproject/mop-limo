@@ -1,0 +1,239 @@
+body {
+    font-family: "Lora" serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-primary-black;
+ 
+    //padding: 1.5rem;
+}
+
+
+
+
+
+
+
+.heading-primary {
+    color: $color-primary;
+    text-transform: uppercase;
+   
+   
+
+
+    margin-bottom: 8rem;
+    backface-visibility: hidden;
+
+    &--main {
+        display: block;
+        font-size: $heading-primary-font-main;
+        font-weight: 700;
+        letter-spacing: 3.5rem;
+        margin-bottom: 4rem;
+        margin-left: 3rem;
+
+        animation: moveInLeft 2s ease-out ;
+
+        @include for-tablet-portrait-up {
+            @media (max-width: 768px) {
+                // margin-bottom: -10rem;
+                display: flex;
+                font-size: $heading-primary-font-main-small;
+                font-weight: 700;
+                letter-spacing: 2rem;
+                margin-bottom: 0.4rem;
+                margin-left: 3rem;
+
+            }
+          } 
+          
+          @include for-tablet-landscape-up {
+            @media (min-width: 992px) {
+                display: block;
+                font-size: $heading-primary-font-main-small;
+                font-weight: 700;
+                letter-spacing: 2rem;
+                margin-bottom: 0.4rem;
+                margin-left: 3rem;
+
+               
+               
+             
+             }
+          }
+    
+
+        
+
+    }
+
+
+    &--sub {
+        margin-top: 10rem;
+        display: block;
+        font-size: $heading-primary-font-sub;
+        font-weight: 600;
+        letter-spacing: 1.5rem;
+        //margin-right: 3rem;
+
+        animation: moveInRight 2s 2s ease-out;
+
+       @include for-phone-only {
+        @media(max-width: 576px) {
+          margin-top: -15rem;
+
+        }
+       }
+
+
+       @include for-tablet-portrait-up {
+        @media (max-width: 768px) {
+           margin-top: 1rem;
+            
+
+        }
+      } 
+
+
+    }
+
+
+    
+   
+}
+
+
+
+.section-about {
+   
+
+
+      &--heading{
+        font-size: $heading-secondary-font;
+        text-transform: uppercase;
+        color: $color-primary;
+
+      }
+
+      &--paragraph1 {
+        color: $color-secondary-white;
+        font-size: $default-font-size;
+        text-align: justify;
+
+        animation: moveInLeft 2s ease-out ;
+        // border: .2rem solid $color-primary;
+       
+      
+      }
+
+
+      &--img {
+        border-width: 1rem;
+    
+        border-radius: 2rem;
+        border-color: grey;
+
+       
+        
+       
+       
+       
+
+        
+      }
+
+
+      &__img {
+        animation: moveInRight 2s ease-out ;
+
+      }
+
+      
+    
+}
+
+
+
+.section-services {
+  background-color: $color-primary-black;
+  
+
+
+}
+
+
+.section-testimonial{
+
+  &--heading {
+    font-size: $heading-secondary-font;
+    text-transform: uppercase;
+    color: $color-primary;
+
+    animation: moveInLeft 2s ease-out ;
+
+    @include for-phone-only {
+      @media(max-width:  576px) {
+         
+      }
+    }
+
+
+    @include for-tablet-portrait-up {
+      @media (max-width: 768px) { 
+        font-size: $heading-secondary-font;
+      
+     
+
+    
+
+      
+       
+    
+        
+      
+      }
+    }
+
+
+    @include for-tablet-landscape-up {
+      @media (max-width: 992px) {
+         
+
+       
+
+          
+       }
+    }
+
+    @include for-phone-only {
+      @media (max-width: 468px) {
+        
+        
+      
+       }
+    }
+    
+  }
+
+  &--heading2 {
+    color:$color-primary;
+    text-transform: uppercase;
+    font-size: $default-font-size;
+    text-align: left;
+
+    animation: moveInLeft 2s ease-out ;
+  }
+
+  &--paragraph1{
+    font-size: $default-font-size2;
+    font-style: italic;
+    text-align:left ;
+    padding: 1rem;
+
+    animation: moveInRight 2s ease-out ;
+
+  }
+   
+}
+
+
+

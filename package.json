@@ -1,0 +1,14 @@
+{
+  "name": "mop-limo",
+  "version": "1.0.0",
+  "description": "official website of mop limo services llc",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Tayo",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

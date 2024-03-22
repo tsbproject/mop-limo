@@ -1,0 +1,53 @@
+.section-services {
+   
+  
+    &--heading {
+      background-color: $color-primary-black;
+      color: $color-primary;
+      font-size: $heading-secondary-font;
+      text-transform: uppercase;
+
+      animation: moveInRight 2s ease-out ;
+    }
+  
+    &--heading2 {
+      color:$color-primary;
+      text-transform: uppercase;
+      font-size: $default-font-size;
+      text-align: center;
+    }
+  
+    &--paragraph1{
+      font-size: $default-font-size2;
+      text-align:left ;
+      // box-shadow: 5rem;
+      // opacity: 6;
+      padding: 1rem;
+
+      
+  
+  
+    }
+  
+    &__image {
+      width: 40rem;
+      height: auto;
+   
+    }
+  
+  
+  
+  }
+
+  .card {
+    border: none;
+
+    box-shadow: 0  0.2rem  2rem rgba(gray, 9);
+    animation: moveInLeft 2s ease-out ;
+
+
+    
+    &:hover {
+      box-shadow: 0 .2rem .5rem .2rem $color-secondary-white ;
+    }
+  }
