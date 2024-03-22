@@ -40,9 +40,9 @@
   }
 
   .card {
-    border: none;
+    border: .1rem solid $color-secondary-white;
 
-    box-shadow: 0  0.2rem  2rem rgba(gray, 9);
+    // box-shadow: 0  0.2rem  2rem rgba(gray, 9);
     animation: moveInLeft 2s ease-out ;
 
 

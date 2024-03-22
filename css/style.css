@@ -97,13 +97,13 @@ body {
     margin-top: 1rem; } }
 
 .section-about--heading {
-  font-size: 3rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   color: #deb887; }
 
 .section-about--paragraph1 {
   color: #ffffff;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   text-align: justify;
   animation: moveInLeft 2s ease-out; }
 
@@ -119,19 +119,19 @@ body {
   background-color: #000000; }
 
 .section-testimonial--heading {
-  font-size: 3rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   color: #deb887;
   animation: moveInLeft 2s ease-out; }
 
 @media (max-width: 768px) and (max-width: 768px) {
   .section-testimonial--heading {
-    font-size: 3rem; } }
+    font-size: 1.8rem; } }
 
 .section-testimonial--heading2 {
   color: #deb887;
   text-transform: uppercase;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   text-align: left;
   animation: moveInLeft 2s ease-out; }
 
@@ -168,7 +168,7 @@ body {
   border-radius: 10rem;
   transition: all .2s;
   position: relative;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 700;
   border: none;
   cursor: pointer; }
@@ -217,7 +217,7 @@ body {
   animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #ffffff;
   display: inline-block;
@@ -276,29 +276,24 @@ body {
   .carousel-item__img {
     max-height: 39rem; } }
 
-.carousel-caption {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-40%, -50%);
-  text-align: center; }
-  .carousel-caption__header {
-    font-family: "Oxygen" sans-serif;
-    font-size: 10rem;
-    position: relative;
-    bottom: 53rem;
-    color: #deb887; }
+.carousel-caption__header {
+  font-family: "Oxygen" sans-serif;
+  font-size: 10rem;
+  position: relative;
+  bottom: 53rem;
+  color: #deb887; }
 
 @media (max-width: 576px) and (max-width: 576px) {
   .carousel-caption__header {
     font-size: 3rem;
     position: relative;
     bottom: 5rem; } }
-  .carousel-caption__description {
-    font-family: "Lora" serif;
-    font-size: 3rem;
-    position: relative;
-    bottom: 53rem; }
+
+.carousel-caption__description {
+  font-family: "Lora" serif;
+  font-size: 3rem;
+  position: relative;
+  bottom: 53rem; }
 
 @media (max-width: 576px) and (max-width: 576px) {
   .carousel-caption__description {
@@ -307,7 +302,7 @@ body {
     bottom: 5rem; } }
 
 .section-contact--heading3 {
-  font-size: 3rem;
+  font-size: 1.8rem;
   margin-bottom: 5rem;
   color: #deb887;
   font-weight: 500;
@@ -318,7 +313,7 @@ body {
   font-size: 4rem; }
 
 .section-contact__email {
-  font-size: 3rem;
+  font-size: 1.8rem;
   color: #ffffff;
   margin-bottom: 10rem; }
 
@@ -331,7 +326,7 @@ body {
     font-size: 2.3rem; } }
 
 .section-contact__phone {
-  font-size: 3rem;
+  font-size: 1.8rem;
   color: #ffffff; }
 
 @media (max-width: 768px) and (max-width: 768px) {
@@ -348,14 +343,14 @@ body {
 .section-services--heading {
   background-color: #000000;
   color: #deb887;
-  font-size: 3rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   animation: moveInRight 2s ease-out; }
 
 .section-services--heading2 {
   color: #deb887;
   text-transform: uppercase;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   text-align: center; }
 
 .section-services--paragraph1 {
@@ -368,8 +363,7 @@ body {
   height: auto; }
 
 .card {
-  border: none;
-  box-shadow: 0 0.2rem 2rem gray;
+  border: 0.1rem solid #ffffff;
   animation: moveInLeft 2s ease-out; }
   .card:hover {
     box-shadow: 0 0.2rem 0.5rem 0.2rem #ffffff; }
@@ -643,7 +637,7 @@ body {
     background-position: center; } }
 
 #section2 {
-  height: 50rem; }
+  height: 90rem; }
 
 @media (max-width: 576px) and (max-width: 576px) {
   #section2 {
