@@ -268,19 +268,6 @@ body {
     color: #000000;
     font-weight: 800; } }
 
-.carousel-item__header {
-  font-family: "Oxygen" sans-serif;
-  font-size: 10rem;
-  position: relative;
-  bottom: 53rem;
-  color: #deb887; }
-
-.carousel-item--description {
-  font-family: "Lora" serif;
-  font-size: 3rem;
-  position: relative;
-  bottom: 53rem; }
-
 .carousel-item__img {
   height: 131.7vh;
   filter: brightness(40%); }
@@ -288,6 +275,36 @@ body {
 @media (max-width: 576px) and (max-width: 576px) {
   .carousel-item__img {
     max-height: 39rem; } }
+
+.carousel-caption {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .carousel-caption__header {
+    font-family: "Oxygen" sans-serif;
+    font-size: 10rem;
+    position: relative;
+    bottom: 53rem;
+    color: #deb887; }
+
+@media (max-width: 576px) and (max-width: 576px) {
+  .carousel-caption__header {
+    font-size: 3rem;
+    position: relative;
+    bottom: 5rem; } }
+  .carousel-caption__description {
+    font-family: "Lora" serif;
+    font-size: 3rem;
+    position: relative;
+    bottom: 53rem; }
+
+@media (max-width: 576px) and (max-width: 576px) {
+  .carousel-caption__description {
+    font-size: 1.3rem;
+    position: relative;
+    bottom: 5rem; } }
 
 .section-contact--heading3 {
   font-size: 3rem;
