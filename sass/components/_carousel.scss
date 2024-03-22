@@ -21,6 +21,30 @@
     // height: 130vh 
     height: 131.7vh;
     filter: brightness(40%);
+
+
+    @include for-small-phone-only {
+      @media (max-width: 468px) {
+       
+       }
+    }
+  
+    @include for-phone-only {
+      @media (max-width: 576px) {
+        height: 39rem;
+       }
+    }
+    @include for-tablet-portrait-up {
+      @media (max-width: 768px) {
+
+        
+      }
+    }
+    @include for-tablet-landscape-up {
+      @media (max-width: 992px) {
+       
+       }
+    }
     
   }
 

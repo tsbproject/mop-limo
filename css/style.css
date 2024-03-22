@@ -285,6 +285,10 @@ body {
   height: 131.7vh;
   filter: brightness(40%); }
 
+@media (max-width: 576px) and (max-width: 576px) {
+  .carousel-item__img {
+    height: 39rem; } }
+
 .section-contact--heading3 {
   font-size: 3rem;
   margin-bottom: 5rem;
