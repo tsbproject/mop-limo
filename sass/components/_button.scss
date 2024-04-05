@@ -167,6 +167,36 @@
 }
 
 
+.carousel-item__btn {
+  
+ 
+    position: relative;
+    bottom: 53rem;
+
+    @include for-tablet-portrait-up {
+        @media (max-width: 768px) {
+            position: relative;
+            bottom: -75rem;
+
+            
+        
+
+        }
+      } 
+
+      @include for-tablet-landscape-up {
+        @media (max-width: 992px) {
+            position: relative;
+            bottom: -100rem;
+
+          
+            
+         }
+      }
+  
+  }
+
+
 
 
 
