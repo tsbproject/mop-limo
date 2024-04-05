@@ -292,6 +292,12 @@ body {
   .carousel-item__img {
     max-height: 39rem; } }
 
+@media (max-width: 576px) and (max-width: 576px) {
+  .carousel-caption {
+    position: relative;
+    top: 50rem;
+    text-align: center; } }
+
 @media (max-width: 768px) and (max-width: 768px) {
   .carousel-caption {
     position: absolute;

@@ -50,12 +50,18 @@
 
   @include for-small-phone-only {
     @media (max-width: 468px) {
-     
+      
      }
   }
 
   @include for-phone-only {
     @media (max-width: 576px) {
+      position: relative;
+      top: 50rem;
+     
+      text-align: center;
+     
+      
       
       
      }
