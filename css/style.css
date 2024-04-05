@@ -142,6 +142,9 @@ body {
   padding: 1rem;
   animation: moveInRight 2s ease-out; }
 
+.heading-form {
+  color: #deb887; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -270,7 +273,7 @@ body {
 
 .carousel-item__img {
   height: 131.7vh;
-  filter: brightness(50%); }
+  filter: brightness(65%); }
 
 @media (max-width: 576px) and (max-width: 576px) {
   .carousel-item__img {
@@ -372,101 +375,119 @@ body {
   .card:hover {
     box-shadow: 0 0.2rem 0.5rem 0.2rem #ffffff; }
 
-.section-form {
-  margin-top: 3rem;
-  display: grid;
-  gap: .2rem;
-  font-size: 1rem; }
+.form__group:not(:last-child) {
+  margin-bottom: 0.5rem; }
 
-@media (min-width: 1200px) and (min-width: 1200px) {
-  .section-form {
-    position: relative;
-    right: -11rem; } }
+.form__textarea {
+  font-size: 1.7rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 60%;
+  display: block;
+  transition: all 3s; }
+  .form__textarea:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #deb887; }
+  .form__textarea:focus:invalid {
+    border-bottom: 3px solid #ff7730; }
+  .form__textarea::-webkit-input-placeholder {
+    color: #999;
+    font-size: 1.6rem; }
 
-@media (max-width: 992px) and (max-width: 992px) {
-  .section-form {
-    position: relative;
-    right: -5rem; } }
+.form__input {
+  font-size: 1.7rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 60%;
+  height: 3rem;
+  display: block;
+  transition: all 3s; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #deb887; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #ff7730; }
+  .form__input::-webkit-input-placeholder {
+    color: #999;
+    font-size: 1.6rem; }
 
-@media (max-width: 768px) and (max-width: 768px) {
-  .section-form {
-    padding: 1rem;
-    position: relative;
-    left: -1rem; } }
-  .section-form label {
-    display: inline-flex;
-    font-size: 1.5rem;
-    color: #deb887; }
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #deb887; }
 
-@media (max-width: 992px) and (max-width: 992px) {
-  .section-form label {
-    font-size: 1.3rem; } }
-  .section-form__input {
-    height: 3rem;
-    background-color: transparent;
-    color: #ffffff;
-    font-size: 1rem;
-    border: 0.1rem solid #ffffff;
-    display: inline-flex;
-    position: relative;
-    bottom: 3rem;
-    left: 8rem;
-    box-shadow: 20cqh;
-    opacity: 6; }
-    .section-form__input:hover {
-      box-shadow: 0 2px 5px 2px #f5f3f3; }
+.form::-webkit-input-placeholder {
+  color: #ff7730; }
 
-@media (max-width: 576px) and (max-width: 468px) {
-  .section-form__input {
-    width: 23rem;
-    position: relative;
-    bottom: 3rem;
-    left: 3rem; } }
+.form__label {
+  font-size: 1.2rem;
+  color: #deb887;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all 3s; }
 
-@media (max-width: 576px) and (max-width: 576px) {
-  .section-form__input {
-    width: 23rem;
-    position: relative;
-    bottom: 3rem;
-    left: 3rem; } }
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
 
-@media (max-width: 768px) and (max-width: 768px) {
-  .section-form__input {
-    width: 20rem;
-    position: relative;
-    bottom: 3rem;
-    left: 2rem; } }
+.form__textarea:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
 
-@media (max-width: 992px) and (max-width: 992px) {
-  .section-form__input {
-    width: 26;
-    position: relative;
-    bottom: 3rem;
-    left: 8rem; } }
-  .section-form__textarea {
-    height: 15rem;
-    position: relative;
-    bottom: 3rem;
-    left: 8rem;
-    background-color: transparent;
-    color: #ffffff;
-    font-size: 1rem;
-    border: 0.1rem solid #ffffff;
-    box-shadow: 20cqh;
-    opacity: 6; }
-    .section-form__textarea:hover {
-      box-shadow: 0 2px 5px 2px #f5f3f3; }
+.form__radio-group {
+  width: 49%;
+  display: inline-block;
+  position: relative; }
 
-@media (max-width: 768px) and (max-width: 768px) {
-  .section-form__textarea {
-    width: 20rem;
-    height: 8rem; } }
+.form__radio-label {
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding-left: 3rem; }
 
-@media (max-width: 992px) and (max-width: 992px) {
-  .section-form__textarea {
-    position: relative;
-    bottom: 3rem;
-    left: 8rem; } }
+.form__radio-input {
+  display: none; }
+
+.form__radio-button {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 0.5rem solid #deb887;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0.2 0.6rem; }
+  .form__radio-button::after {
+    content: "";
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #deb887;
+    opacity: 0;
+    transition: all 2s; }
+
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1; }
 
 .navbar-nav {
   list-style: none;
@@ -595,10 +616,20 @@ body {
     box-shadow: 0 2px 5px 2px #f5f3f3; }
 
 .section-contact-form {
+  padding: 25rem;
+  background-image: linear-gradient(to right bottom, #000000, #777);
+  background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.9) 0%, rgba(153, 153, 153, 0.9) 65%, transparent 40%), url(/images/mop10.jpeg);
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  height: 100%;
   background-color: none;
   border-radius: 1rem;
   box-shadow: 0 0.2rem 2rem gray;
   animation: moveInRight 2s ease-out; }
+  .section-contact-form__form {
+    width: 50%;
+    padding: 6rem; }
   .section-contact-form:hover {
     box-shadow: 0 2px 5px 2px #f5f3f3; }
 
