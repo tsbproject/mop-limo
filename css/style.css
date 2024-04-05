@@ -271,19 +271,18 @@ body {
     color: #000000;
     font-weight: 800; } }
 
-.carousel-item__btn {
+.carousel-caption__btn {
   position: relative;
-  bottom: 53rem; }
+  bottom: 45rem; }
 
 @media (max-width: 768px) and (max-width: 768px) {
-  .carousel-item__btn {
+  .carousel-caption__btn {
     position: relative;
-    bottom: -75rem; } }
+    bottom: 2rem; } }
 
 @media (max-width: 992px) and (max-width: 992px) {
-  .carousel-item__btn {
-    position: relative;
-    bottom: -100rem; } }
+  .carousel-caption__btn {
+    position: absolute; } }
 
 .carousel-item__img {
   height: 131.7vh;
@@ -292,6 +291,18 @@ body {
 @media (max-width: 576px) and (max-width: 576px) {
   .carousel-item__img {
     max-height: 39rem; } }
+
+@media (max-width: 768px) and (max-width: 768px) {
+  .carousel-caption {
+    position: absolute;
+    bottom: -50rem;
+    text-align: center; } }
+
+@media (max-width: 992px) and (max-width: 992px) {
+  .carousel-caption {
+    position: absolute;
+    top: 15rem;
+    text-align: center; } }
 
 .carousel-caption__header {
   font-family: "Oxygen" sans-serif;

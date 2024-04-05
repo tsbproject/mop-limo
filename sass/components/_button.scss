@@ -167,16 +167,18 @@
 }
 
 
-.carousel-item__btn {
+.carousel-caption__btn {
+   
   
  
     position: relative;
-    bottom: 53rem;
+    bottom: 45rem;
+   
 
     @include for-tablet-portrait-up {
         @media (max-width: 768px) {
             position: relative;
-            bottom: -75rem;
+            bottom: 2rem;
 
             
         
@@ -186,8 +188,8 @@
 
       @include for-tablet-landscape-up {
         @media (max-width: 992px) {
-            position: relative;
-            bottom: -100rem;
+            position: absolute;
+          
 
           
             
