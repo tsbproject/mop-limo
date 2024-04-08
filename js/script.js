@@ -67,17 +67,27 @@ let lastScrollTop = 0;
 
 
 // FORM VALIDATON
-function validateForm() {
-    var name = document.getElementById('name').value;
-    var phone = document.getElementById('phone').value;
-    var email = document.getElementById('email').value;
-    var message = document.getElementById('message').value;
-
-    if (name === '' || phone === '' || email === '' || message === '') {
-        alert('All fields must be filled out');
-        return false;
-    }
-
-
-    return true;
-}
+const form = document.getElementById('contactForm');
+        form.addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const formData = new FormData(form);
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            const responseData = await response.json();
+            const responseElement = document.getElementById('response');
+            if (response.ok) {
+                responseElement.classList.remove('error');
+                responseElement.classList.add('message');
+                responseElement.textContent = responseData.message;
+                form.reset();
+            } else {
+                responseElement.classList.remove('message');
+                responseElement.classList.add('error');
+                responseElement.textContent = responseData.error;
+            }
+        });

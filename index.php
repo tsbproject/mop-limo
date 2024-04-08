@@ -387,7 +387,7 @@
         
         <div id="section-contact-form" class="col-sm-8 justify-content-center">
           <div class="section-contact-form p-2 ">
-            <form action="process_form.php" method="post" id="contactForm" class="form"> 
+          <form action="process_form.php" method="post" id="contactForm" class="form">
               <div class="u-margin-bottom-medium">
                   <h2 class="heading-form">
                       Write to us few lines
@@ -416,6 +416,7 @@
               <div class="form__group">
                 <textarea class="form__textarea" placeholder="Write your message here " id="message" rows="5" required></textarea> </textarea>
                 <label for="message" class="form__label"> Your Message</label>
+
             </div>
 
 
@@ -426,6 +427,8 @@
                 <div class="form__group ">
                   <button type="btn btn-primary" class="section-form__submit"> Submit</button>
                 </div>
+
+                <p id="response" class="message"></p>
            
              
               
