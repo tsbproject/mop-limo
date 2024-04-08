@@ -335,6 +335,12 @@ body {
     position: relative;
     bottom: 5rem; } }
 
+.carousel-item__testimonial {
+  font-size: 1.4rem; }
+
+.carousel-item__header {
+  color: #deb887; }
+
 .section-contact--heading3 {
   font-size: 1.8rem;
   margin-bottom: 5rem;
