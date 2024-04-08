@@ -75,7 +75,7 @@
 
   @include for-tablet-portrait-up {
     @media (max-width: 768px) { 
-      height: 140rem;
+      height: 230rem;
     
     }
   }
@@ -83,7 +83,7 @@
 
   @include for-tablet-landscape-up {
     @media (max-width: 992px) { 
-      height: 235rem;
+      // height: 230rem;
 
     }
   }
@@ -153,6 +153,23 @@
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+
+  @include for-phone-only {
+    @media (max-width: 576px) { 
+      height: 105rem;
+        
+     }
+      
+    }
+  
+    @include for-phone-only {
+      @media (max-width: 468px) {
+     
+       
+        
+      
+       }
+    }
 
 
   @include for-tablet-portrait-up {
