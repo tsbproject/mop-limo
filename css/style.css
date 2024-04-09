@@ -562,12 +562,14 @@ body {
   font-stretch: normal;
   font-family: "oxygen" sans-serif;
   margin-right: 2rem;
-  color: #ffffff; }
+  color: #deb887; }
 
 .nav-link {
   position: relative;
   left: 36rem;
-  color: #ffffff; }
+  color: #deb887; }
+  .nav-link:active {
+    color: #deb887; }
 
 @media (max-width: 576px) and (max-width: 576px) {
   .nav-link {
@@ -627,12 +629,12 @@ body {
   color: #deb887; }
 
 .navbar-brand {
-  width: 14rem;
+  width: 12rem;
   height: 9rem; }
 
 .site-logo {
   width: 12rem;
-  height: 12rem; }
+  height: 10rem; }
 
 .home__text-box {
   position: absolute;
