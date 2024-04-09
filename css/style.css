@@ -104,7 +104,7 @@ body {
 .section-about--paragraph1 {
   color: #ffffff;
   font-size: 1.4rem;
-  text-align: justify;
+  text-align: left;
   animation: moveInLeft 2s ease-out; }
 
 .section-about--img {

@@ -117,7 +117,7 @@ body {
       &--paragraph1 {
         color: $color-secondary-white;
         font-size: $default-font-size;
-        text-align: justify;
+        text-align: left;
 
         animation: moveInLeft 2s ease-out ;
         // border: .2rem solid $color-primary;
