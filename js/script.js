@@ -1,26 +1,26 @@
-let lastScrollTop = 0;
-  const header = document.getElementById('header');
+// let lastScrollTop = 0;
+//   const header = document.getElementById('header');
 
-  window.addEventListener('scroll', function() {
-    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-    if (currentScroll > lastScrollTop) {
-      // Scroll down
-      header.style.transform = 'translateY(-100%)';
-    } else {
-      // Scroll up
-      header.style.transform = 'translateY(0)';
-    }
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-  });
+//   window.addEventListener('scroll', function() {
+//     let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+//     if (currentScroll > lastScrollTop) {
+//       // Scroll down
+//       header.style.transform = 'translateY(-100%)';
+//     } else {
+//       // Scroll up
+//       header.style.transform = 'translateY(0)';
+//     }
+//     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+//   });
 
-  let scrollTimer = null;
+//   let scrollTimer = null;
 
-  window.addEventListener('scroll', function() {
-    clearTimeout(scrollTimer);
-    scrollTimer = setTimeout(function() {
-      header.style.transform = 'translateY(0)';
-    }, 200); // Adjust the delay as needed
-  });
+//   window.addEventListener('scroll', function() {
+//     clearTimeout(scrollTimer);
+//     scrollTimer = setTimeout(function() {
+//       header.style.transform = 'translateY(0)';
+//     }, 200); // Adjust the delay as needed
+//   });
 
 
 

@@ -196,9 +196,11 @@
 }
 
 .message {
+    font-size: $default-font-size;
     color: green;
 }
 .error {
+    font-size: $default-font-size;
     color: red;
 }
 

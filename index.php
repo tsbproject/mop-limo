@@ -414,7 +414,7 @@
               </div>
 
               <div class="form__group">
-                <textarea class="form__textarea" placeholder="Write your message here " id="message" rows="5" required></textarea> </textarea>
+                <textarea class="form__textarea" placeholder="Write your message here " id="message" required></textarea>
                 <label for="message" class="form__label"> Your Message</label>
 
             </div>
@@ -436,10 +436,7 @@
               
 
           </form>  
-          <!-- <?php if(isset($_GET['status']) && $_GET['status'] == 'success'): ?>
-            <div class="thank-you-message">Your message submitted succesfully,
-               we willget back at you as soon as possible. Thank you! </div>
-        <?php endif; ?> -->
+          
         </div>
            
       </div>
