@@ -1,3 +1,4 @@
 {
-    "php.validate.executablePath": "sendEmail.php"
+    "php.validate.executablePath": "sendEmail.php",
+    "liveServer.settings.port": 5502
 }

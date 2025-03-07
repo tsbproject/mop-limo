@@ -17,21 +17,17 @@
     display: block;
     transition: all 3s;
 
-    @include for-tablet-portrait-up {
-        @media (max-width: 768px) {
+    
+     @include media-breakpoint-down(lg) {
             width: 100%;
             padding: 0.8rem;
 
     
-        }
+        
       }
 
 
-      @include for-tablet-landscape-up {
-        @media (max-width: 992px) {
-            
-         }
-      }
+     
     
 
     &:focus {
@@ -66,13 +62,12 @@
       display: block;
       transition: all 3s;
 
-      @include for-tablet-portrait-up {
-        @media (max-width: 768px) {
+      @include media-breakpoint-down(lg) {
             width: 100%;
             padding: 0.5rem;
 
     
-        }
+        
       }
 
       &:focus {

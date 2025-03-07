@@ -1,22 +1,20 @@
 
 
 
-  @mixin for-small-phone-only {
-    @media (max-width: 468px) { @content; }
+// Mixin for media queries (down)
+@mixin media-breakpoint-down($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: 575.98px) { @content; }
+  } @else if $breakpoint == md {
+    @media (max-width: 767.98px) { @content; }
+  } @else if $breakpoint == lg {
+    @media (max-width: 991.98px) { @content; }
+  } @else if $breakpoint == xl {
+    @media (max-width: 1199.98px) { @content; }
+
   }
 
-  @mixin for-phone-only {
-    @media (max-width: 576px) { @content; }
-  }
-  @mixin for-tablet-portrait-up {
-    @media (max-width: 768px) { @content; }
-  }
-  @mixin for-tablet-landscape-up {
-    @media (max-width: 992px) { @content; }
-  }
-  @mixin for-desktop-up {
-    @media (min-width: 1200px) { @content; }
-  }
-  @mixin for-big-desktop-up {
-    @media (min-width: 1400px) { @content; }
-  }
+}
+
+
+ 

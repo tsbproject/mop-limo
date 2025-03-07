@@ -29,11 +29,11 @@
   
     }
   
-    &__image {
-      width: 40rem;
-      height: auto;
+    // &__image {
+      
+    //   height: 30rem;
    
-    }
+    // }
   
   
   
@@ -46,8 +46,17 @@
     animation: moveInLeft 2s ease-out ;
 
 
+   
+
+
     
     &:hover {
       box-shadow: 0 .2rem .5rem .2rem $color-secondary-white ;
     }
   }
+
+
+
+.card.image {
+  height: 20rem;
+}

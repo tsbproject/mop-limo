@@ -8,10 +8,10 @@
     <link rel="icon" type="image/x-icon" href="/images/mop-logo.png">
 
     <!--------------------Bootstrap CSS---------------------->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
-       rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
        
-       <!-------------------JS Library---------------------------------->
+       <!------------------- JS Library---------------------------------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     
@@ -34,11 +34,12 @@
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity=
      "sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
 </head>
+
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <header id="header" class="header fixed-top">
         
-      <nav class="navbar navbar-expand-lg navbar-light bg-tranparent">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
           <a class="navbar-brand" href="index.html"><img class="site-logo" src="images/mop-logo.png" alt="site-logo"></a>
           
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -87,8 +88,9 @@
 
 
   <div id="section1" class="home">
-    <div class="container-fluid">
-      <div class="col-sm-12">
+    <!-- <div class="container-fluid bg-dark"> -->
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1">
+        <div class="col">
         <div id="carouselExampleDark" class="carousel carousel-fade" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -136,14 +138,17 @@
         </div>
        
        
-      </div>  
+        </div>  
     </div>
   </div>
 
-   <div id="section2" class="section-about bg-black">
-    <div class="container-fluid justify-content-center  px-4">
-      <div class="row gy-5">
-        <div class="col-sm-6">
+   
+  
+  
+  <div id="section2" class="section-about bg-black">
+    <div class="container-fluid justify-content-center  px-2">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 row-cols-xl-2 gy-5">
+        <div class="col">
           <div class="card bg-black">
             <div class="card-body">
               <h2 class="section-about--heading  text-center  u-margin-top-medium u-margin-bottom-small">About us</h2>
@@ -159,10 +164,9 @@
                      with us is a seamless and unforgettable experience.</p>  
 
                 <h3 class="section-about--heading  text-center  u-margin-top-medium u-margin-bottom-small">Our Vision</h3>
-                <p class="section-about--paragraph1 justify-content-evenly"> Our mission at Mop Limo Service LLC is to redefine
-                  the standards of luxury transportation by offering impeccable service, unparalleled comfort, and utmost
-                    reliability to our clients. We strive to exceed expectations with every ride, ensuring that each journey
-                    with us is a seamless and unforgettable experience.</p>  
+                <p class="section-about--paragraph1 justify-content-evenly"> Mop Limo Services LLC is dedicated to redefining 
+                  urban mobility with a commitment to exceptional, reliable, and luxurious transportation experiences, ensuring 
+                  that every journey with us sets a new standard for comfort and customer satisfaction.</p>  
 
                 <h3 class="section-about--heading  text-center  u-margin-top-medium u-margin-bottom-small">Why choose us </h3>
                 <ul class="section-about--paragraph1 justify-content-evenly"> 
@@ -191,7 +195,7 @@
           </div>
            
         </div>
-        <div class="col-sm-6">
+        <div class="col">
           <div class="card bg-black">
             <div class="card-body section-about__img">
               <img class="section-about--img img-fluid u-margin-top-medium " src="images/mop17 (2).jpeg" alt="danny-driver">
@@ -226,14 +230,14 @@
 
 
    <div id="section3" class="section-services   text-light">
-    <div class="p-3 bg-black"><h2 class="section-services--heading  text-center  u-margin-top-medium  u-margin-bottom-medium">
+    <div class="p-3 bg-black"><h2 class="section-services--heading  text-center  u-margin-top-big  u-margin-bottom-medium">
       Our Services
     </h2>
     <div class="container overflow-hidden">
-      <div class="row  gx-5">
-        <div  id="section-services" class="col-sm-2 bg-black">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-5 row-cols-xl-5 gx-5">
+        <div  id="section-services" class="col bg-black">
           <div class="card">
-            <img src="images/mop1 (2).jpeg" class="card-img-top" alt="service-photo1">
+            <img src="images/mop1 (2).jpeg" class="card-img-top card-image" alt="service-photo1">
             <div class="card-body bg-black">
               <h5 class="section-services--heading2">Airport Transfers</h5>
               <p class="section-services--paragraph1"> Start or end your journey with
@@ -241,9 +245,9 @@
             </div>
           </div>
         </div>
-        <div id="section-services" class="col-sm-2">
+        <div id="section-services" class="col">
           <div class="card">
-            <img src="images/mop12 (2).jpeg" class="card-img-top" alt="service-photo2">
+            <img src="images/mop12 (2).jpeg" class="card-img-top card-image" alt="service-photo2">
             <div class="card-body bg-black">
               <h5 class="section-services--heading2">Corporate Transportation</h5>
               <p class="section-services--paragraph1"> Impress your clients or colleagues
@@ -251,9 +255,9 @@
             </div>
           </div>
         </div>
-        <div id="section-services" class="col-sm-2">
+        <div id="section-services" class="col">
           <div class="card">
-            <img src="images/mop14 (2).jpeg" class="card-img-top" alt="service-photo3">
+            <img src="images/mop14 (2).jpeg" class="card-img-top  card-image " alt="service-photo3">
             <div class="card-body bg-black">
               <h5 class="section-services--heading2">Special Events </h5>
               <p class="section-services--paragraph1">Whether it's a wedding, prom, anniversary, 
@@ -264,9 +268,9 @@
           </div>
         </div>
 
-        <div id="section-services" class="col-sm-2">
+        <div id="section-services" class="col">
           <div class="card">
-            <img src="images/mop8-(2).jpg" class="card-img-top" alt="service-photo4">
+            <img src="images/mop8-(2).jpg" class="card-img-top card-image" alt="service-photo4">
             <div class="card-body bg-black">
               <h5 class="section-services--heading2">City Tours</h5>
               <p class="section-services--paragraph1"> Explore the sights and sounds of the city in 
@@ -275,9 +279,9 @@
           </div>
         </div>
       
-        <div id="section-services" class="col-sm-2">
+        <div id="section-services" class="col">
           <div class="card">
-            <img src="images/mop3 (2).jpeg" class="card-img-top" alt="service-photo3">
+            <img src="images/mop3 (2).jpeg" class="card-img-top card-image" alt="service-photo3">
             <div class="card-body bg-black">
               <h5 class="section-services--heading2">VIP Transportation</h5>
               <p class="section-services--paragraph1"> For those who demand the utmost in luxury and exclusivity,
@@ -309,7 +313,7 @@
                 From the moment I booked until the end of my journey, their professionalism and attention 
                 to detail were evident. The chauffeur arrived promptly, the vehicle was immaculate, 
                 and the ride was smooth. Highly recommend Mop Limo for any transportation needs!"</p>
-              <h4 class="carousel-item__header">- John Doe</h4>
+              <h4 class="carousel-item__header">- Rosemary Elliot</h4>
             </div>
           </div>
           
@@ -387,36 +391,52 @@
         
         <div id="section-contact-form" class="col-sm-8 justify-content-center">
           <div class="section-contact-form p-2 ">
-          <form action="process_form.php" method="post" id="contactForm" class="form">
+            <form action="process_form.php" method="post" id="contactForm" class="form"> 
               <div class="u-margin-bottom-medium">
                   <h2 class="heading-form">
                       Write to us few lines
                   </h2>
               </div>
+
+
+              <?php if (isset($_SESSION['email_message'])): ?>
+                    <div id="success-message" class=" success-msg alert alert-<?php echo $_SESSION['email_message_type']; ?> mt-3">
+                        <?php 
+                        echo $_SESSION['email_message']; 
+                        unset($_SESSION['email_message']);
+                        unset($_SESSION['email_message_type']);
+                        ?>
+                    </div>
+                <?php endif; ?>
+
+                <script type="text/javascript">
+        function onSubmit(token) {
+            document.getElementById("contactForm").submit();
+        }
+    </script>
               
 
               
                 <div class="form__group">
-                    <input type="text" class="form__input" placeholder="Full name" id="name" required>
+                    <input type="text" class="form__input" placeholder="Full name" id="name" name="name" required>
                     <label for="name" class="form__label"> Full Name</label>
                 </div>
 
 
                 <div class="form__group">
-                    <input type="phone" class="form__input" placeholder="Phone" id="phone" required>
+                    <input type="phone" class="form__input" placeholder="Phone" id="phone" name="phone" required>
                     <label for="phone" class="form__label"> Telephone</label>
                 </div>
 
 
                 <div class="form__group">
-                  <input type="email" class="form__input" placeholder="Email" id="email" required>
+                  <input type="email" class="form__input" placeholder="Email" id="email" name="email" required>
                   <label for="email" class="form__label"> Email Address</label>
               </div>
 
               <div class="form__group">
-                <textarea class="form__textarea" placeholder="Write your message here " id="message" required></textarea>
+                <textarea class="form__textarea" placeholder="Write your message here " id="message" name="message" rows="5" required></textarea> </textarea>
                 <label for="message" class="form__label"> Your Message</label>
-
             </div>
 
 
@@ -425,7 +445,7 @@
 
                    
                 <div class="form__group ">
-                  <button type="btn btn-primary" class="section-form__submit"> Submit</button>
+                  <button class=" btn btn-primary  section-form__submit g-recaptcha" data-sitekey="6LfwHx4qAAAAAD1YaFK2cyQBO_L2bjnYIgRQs-yk" data-callback="onSubmit">Submit &rAarr;</button>
                 </div>
 
                 <p id="response" class="message"></p>
@@ -455,10 +475,9 @@
   </div>
 
 
- 
-<script src="js/script.js"></script> 
-<!-- Bootstrap Bundle with Popper -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js" integrity="sha384-0y8F5R+3aoeVNzA/EqZggq8Bo+8Pq5Stc2jR9y2fHWfDZQr1f8l4+Xj3pGw8N3fG" crossorigin="anonymous"></script>
-
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>   
+   <script src="js/script.js"></script>
 </body>
 </html>

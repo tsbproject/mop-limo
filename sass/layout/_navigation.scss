@@ -5,34 +5,27 @@
         display: inline-flex;
 
         
-        
+        @include media-breakpoint-down(lg) {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            
 
-        @include for-phone-only {
-          @media (max-width: 576px) { 
+        }
+       
+
+        @include media-breakpoint-down(md) {
           position: relative;
           display: block;
           width: 100%;
           height: 100%;
            
             
-            
-           
-          }
         }
 
 
-        @include for-tablet-portrait-up {
-          @media (min-width: 768px) {
-            width: 100%;
-            height: 100%;
-            display: block;
-            position: relative;
-            
-           
-            
-           }
-        }
-       
+        
 
        
 
@@ -46,13 +39,8 @@
     
         
         
-        @include for-tablet-portrait-up {
-          @media (min-width: 768px) {
-           
-          
-            
-            
-           }
+        @include media-breakpoint-down(lg) {
+         
         }
 
 
@@ -76,72 +64,56 @@
          }
 
 
-        //  &:visited {
-        //   color: $color-secondary-white
-        //  }
-
-        //  &:focus {
-        //   color: $color-primary;
-        //  }
-        
 
        
 
 
         
        
-         @include for-phone-only {
-          @media (max-width: 576px) { 
+         @include media-breakpoint-down(md) {
             color: $color-primary;
             position: relative;
             left: 2rem;
             
             
-           
-          }
         }
 
 
         
-        @include for-tablet-portrait-up {
-          @media (min-width: 768px) {
-            color: $color-primary;
-            position: relative;
-            left: 2rem;
-
-            
-            
-            
-           }
-        }
-
-
-        @include for-tablet-landscape-up {
-          @media (min-width: 992px) { 
-            position: relative;
-            left: 3rem;
-
-          }
-        }
         
 
-        @include for-desktop-up {
-          @media (min-width: 1200px) { 
-            position: relative;
-            left: 57rem;
+
+      
+        
 
 
-           }
-        }
-
-
-        @include for-big-desktop-up {
-          @media (min-width: 1400px) {
+        @include media-breakpoint-down(xxl) {
             position: relative;
             left: 57rem;
              
-           }
+           
         }
+
+        @include media-breakpoint-down(xl) {
+            position: relative;
+            left: 57rem;
+        }
+
+
+        @include media-breakpoint-down(lg) {
+            position: relative;
+            left: 3rem;
+
+        }
+
+
+        
+        @include media-breakpoint-down(md) {            color: $color-primary;
+            position: relative;
+            left: 2rem;
+
+        }
+
         
        
 
@@ -165,36 +137,33 @@
     height: 100rem;
    
 
-    @include for-phone-only {
-      @media (max-width: 576px) { 
-        max-width: 15rem;
-        
-        
-        
-       
-      }
-    }
-
+    
 
     
-    @include for-tablet-portrait-up {
-      @media (min-width: 768px) {
-        max-width: 15rem;
-       
 
-        
-        
-        
-       }
+
+   
+
+
+    @include media-breakpoint-down(xl) {
+
+      
+
     }
 
 
-    @include for-tablet-landscape-up {
-      @media (min-width: 992px) { 
-      
-        
+     
+    @include media-breakpoint-down(lg) {
+        max-width: 15rem;
+       
 
-      }
+    }
+
+
+
+    @include media-breakpoint-down(md) {
+        max-width: 15rem;
+        
     }
     
 

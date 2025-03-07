@@ -37,11 +37,13 @@
 
     box-shadow: 0 0.2rem 2rem rgba(gray, 9);
 
+    
+    animation: moveInLeft 2s ease-out ;
+
     &:hover {
         box-shadow: 0 2px 5px 2px #f5f3f3; 
     }
 
-    animation: moveInLeft 2s ease-out ;
  
     
 }
@@ -65,14 +67,25 @@
 
     height: 100%;
 
-    @include for-tablet-portrait-up {
-        @media (min-width: 768px) {
+    &:hover {
+        box-shadow: 0 2px 5px 2px #f5f3f3; 
+    }
+
+    @include media-breakpoint-down(lg) {
             padding: 25rem ;
             background-image:linear-gradient(to right bottom, $color-primary-black, $color-grey-dark) ;
-        
+                                                   
+            background-color: none;
+            border-radius: 1rem;
+            box-shadow: 0 0.2rem 2rem rgba(gray, 9);
+            
+            
             background-image:linear-gradient( 105deg, 
             rgba($color-primary-black, .9) 0%,
             rgba($color-grey-dark-2, .9) 65%,
+
+            
+   
             
             transparent 40%), 
             
@@ -82,47 +95,41 @@
             box-shadow: 0 1.5rem 4rem rgba($color-primary-black, .2);
         
             height: 60%;
+
+            &:hover {
+                box-shadow: 0 2px 5px 2px #f5f3f3; 
+            }
     
         }
-      }
 
-    
-    
+
+             
     &__form {
         width: 100%;
         padding: 6rem;
+     }
 
-        
+      }
 
-        
-    }
+    
+  
 
-    background-color: none;
-    // border: .1rem solid $color-primary;
-    border-radius: 1rem;
-    // box-shadow: 20cqh;
-    // opacity: 6;
+    
 
-    box-shadow: 0 0.2rem 2rem rgba(gray, 9);
+    // animation: moveInRight 2s ease-out ;
 
-    &:hover {
-        box-shadow: 0 2px 5px 2px #f5f3f3; 
-    }
-
-    animation: moveInRight 2s ease-out ;
-
-    @include for-tablet-portrait-up {
-        @media (max-width: 768px) { 
+    
         
          
       
           
         
-        }
-      }
+      
+
+   
  
 
-}
+
 
 
 #section-footer {

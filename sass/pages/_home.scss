@@ -6,39 +6,35 @@
 
    
 
-      @include for-phone-only {
-        @media (max-width: 576px) {
-            height: 60rem;
-            background-size: cover
-          
-           
-           
-           
-        }
-      }
 
 
-      @include for-tablet-portrait-up {
-        @media (max-width: 768px) {
-            height: 42rem;
-            background-size: cover;
-          //  background-position: center;
-        
-           
-           
-           
-        }
-      }
 
-      @include for-tablet-landscape-up {
-        @media (min-width: 992px) {
+      @include media-breakpoint-down(xl) {
             height: 70rem;
             background-size: cover;
             background-position: center;
            
-         
-         }
       }
+
+
+      @include media-breakpoint-down(lg) {
+            height: 42rem;
+            background-size: cover;
+        
+      }
+
+
+
+      
+      @include media-breakpoint-down(md) {
+            height: 60rem;
+            background-size: cover
+          
+           
+
+      }
+
+     
 
       
 
@@ -57,36 +53,36 @@
    #section2 {
     height: 90rem;
 
-@include for-phone-only {
-  @media (max-width: 576px) { 
-      height: 200rem;
-   }
-    
-  }
+    @include media-breakpoint-down(xl) {
 
-  @include for-phone-only {
-    @media (max-width: 468px) {
-      //  height: 250rem;
-     
-      
-    
-     }
-  }
-
-  @include for-tablet-portrait-up {
-    @media (max-width: 768px) { 
-      height: 255rem;
-    
-    }
-  }
-
-
-  @include for-tablet-landscape-up {
-    @media (max-width: 992px) { 
       // height: 230rem;
-
-    }
+  
   }
+   
+  
+    @include media-breakpoint-down(lg) {
+        height: 180rem;
+      
+    }
+    
+  
+    @include media-breakpoint-down(md) {
+          height: 100rem;
+       
+        
+    }
+  
+  
+    @include media-breakpoint-down(sm) {
+      height: 150rem;
+   
+    
+  }
+  
+
+ 
+
+
 }
       
     
@@ -94,42 +90,43 @@
 
 
 #section3 {
-    height: 80rem;
+
+    height: 70rem;
     background-color: $color-primary-black;
 
 
-    @include for-phone-only {
-      @media (max-width: 576px) { 
-        height: 140rem;
-          
-       }
-        
-      }
-    
-      @include for-phone-only {
-        @media (max-width: 468px) {
-          height: 140rem;
-         
-          
-        
-         }
-      }
-    
-      @include for-tablet-portrait-up {
-        @media (max-width: 768px) { 
-          height: 170rem;
-        
-        }
-      }
+
+   
+
+
     
     
-      @include for-tablet-landscape-up {
-        @media (max-width: 992px) { 
+      @include media-breakpoint-down(xl) {
           height: 212rem;
     
-        }
       }
     
+    
+      @include media-breakpoint-down(lg) {
+          height: 170rem;
+        
+      }
+
+
+
+      @include media-breakpoint-down(md) {
+          height: 250rem;
+          
+        }
+
+
+        @include media-breakpoint-down(sm) {
+            height: 250rem;
+            
+          }
+    
+    
+     
 }
 
 
@@ -154,50 +151,25 @@
   background-repeat: no-repeat;
   position: relative;
 
-  @include for-phone-only {
-    @media (max-width: 576px) { 
-      height: 105rem;
-        
-     }
-      
-    }
+ 
   
-    @include for-phone-only {
-      @media (max-width: 468px) {
-     
-       
-        
-      
-       }
-    }
 
 
-  @include for-tablet-portrait-up {
-    @media (min-width: 768px) {
+  @include media-breakpoint-down(xl) {
+      height: 75rem;
+
+  }
+
+  @include media-breakpoint-down(lg) {
       height: 60rem;
-
-    }
   }
-  
-  
-  @include for-tablet-landscape-up {
-    @media (min-width: 992px) {
-      height: 75rem;
 
-    }
-  }
-  @include for-desktop-up {
-    @media (min-width: 1200px) {
-      height: 75rem;
 
+  @include media-breakpoint-down(md) {
+      height: 105rem;
+      
     }
-  }
-  @include for-big-desktop-up {
-    @media (min-width: 1400px) {
-      height: 75rem;
-
-    }
-  }
+ 
   
 }
 

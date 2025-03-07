@@ -45,12 +45,10 @@
         transform: translate(-50%, -50%);
         text-align: center;
 
-        @include for-tablet-portrait-up {
-            @media (max-width: 768px) {
+        @include media-breakpoint-down(lg) {
               margin-top: 8rem;
             }
-          }
+    }
         
       
-}
-
+        

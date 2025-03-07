@@ -6,33 +6,35 @@
         font-size: $default-font-size2;
         color: $color-primary;
 
-        @include for-phone-only {
-            @media (max-width: 576px) { 
-              font-size: 1rem;
+
+
+
+        @include media-breakpoint-down(xl) {
+                font-size: .3rem;
               
-              
-             
-            }
           }
+          
 
 
-        @include for-tablet-portrait-up {
-            @media (min-width: 768px) {
+        @include media-breakpoint-down(lg) {
               font-size: .3rem;
               
               
-              
-             }
           }
-  
-  
-          @include for-tablet-landscape-up {
-            @media (min-width: 992px) { 
-                font-size: .3rem;
-              
-  
-            }
+
+
+
+          
+        @include media-breakpoint-down(md) {
+          @media (max-width: 576px) { 
+            font-size: 1rem;
+            
+            
+           
           }
+        }
+  
+  
           
 
         

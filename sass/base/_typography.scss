@@ -33,9 +33,25 @@ body {
 
         animation: moveInLeft 2s ease-out ;
 
-        @include for-tablet-portrait-up {
-            @media (max-width: 768px) {
-                // margin-bottom: -10rem;
+        @include media-breakpoint-down(xl) {
+         
+              display: block;
+              font-size: $heading-primary-font-main-small;
+              font-weight: 700;
+              letter-spacing: 2rem;
+              margin-bottom: 0.4rem;
+              margin-left: 3rem;
+
+             
+             
+           
+           
+        }
+  
+        
+        
+        @include media-breakpoint-down(lg) {
+           
                 display: flex;
                 font-size: $heading-primary-font-main-small;
                 font-weight: 700;
@@ -43,24 +59,10 @@ body {
                 margin-bottom: 0.4rem;
                 margin-left: 3rem;
 
-            }
+            
           } 
           
-          @include for-tablet-landscape-up {
-            @media (min-width: 992px) {
-                display: block;
-                font-size: $heading-primary-font-main-small;
-                font-weight: 700;
-                letter-spacing: 2rem;
-                margin-bottom: 0.4rem;
-                margin-left: 3rem;
-
-               
-               
-             
-             }
-          }
-    
+          
 
         
 
@@ -77,22 +79,24 @@ body {
 
         animation: moveInRight 2s 2s ease-out;
 
-       @include for-phone-only {
-        @media(max-width: 576px) {
+        @include media-breakpoint-down(lg) {
+          margin-top: 1rem;
+          
+        }
+       
+      
+        
+        @include media-breakpoint-down(sm) {
           margin-top: -15rem;
-
+          
         }
-       }
+       
+       
+       
+      
 
 
-       @include for-tablet-portrait-up {
-        @media (max-width: 768px) {
-           margin-top: 1rem;
-            
-
-        }
-      } 
-
+       
 
     }
 
@@ -104,6 +108,10 @@ body {
 
 
 .section-about {
+
+  @include media-breakpoint-down(sm) {
+     height: 180rem;
+  }
    
 
 
@@ -126,7 +134,7 @@ body {
       }
 
 
-      &--img {
+      &__img {
         border-width: 1rem;
     
         border-radius: 2rem;
@@ -154,14 +162,32 @@ body {
 
 
 .section-services {
+  margin-top: 10rem;
   background-color: $color-primary-black;
+
+
+  @include media-breakpoint-down(sm) {
+
+    height: 200rem ;
+    
+  }
   
 
 
 }
 
 
+.card.img {
+  height: 20rem;
+}
+
+
 .section-testimonial{
+
+  @include media-breakpoint-down(sm) {
+
+    margin-top: 30rem;
+  }
 
   &--heading {
     font-size: $heading-secondary-font;
@@ -170,47 +196,41 @@ body {
 
     animation: moveInLeft 2s ease-out ;
 
-    @include for-phone-only {
-      @media(max-width:  576px) {
-         
-      }
+    
+    
+    
+    
+    @include media-breakpoint-down(xl) {
+      
     }
 
 
-    @include for-tablet-portrait-up {
-      @media (max-width: 768px) { 
-        font-size: $heading-secondary-font;
+    @include media-breakpoint-down(lg) {
+      font-size: $heading-secondary-font;
       
-     
+    }
+
+
+    @include media-breakpoint-down(md) {
+      font-size: $heading-secondary-font;
+    }
+
+
+    @include media-breakpoint-down(sm) {
+      
+    }
+
+   
+
+
+
+
+
+
+  
 
     
-
-      
-       
     
-        
-      
-      }
-    }
-
-
-    @include for-tablet-landscape-up {
-      @media (max-width: 992px) {
-         
-
-       
-
-          
-       }
-    }
-
-    @include for-phone-only {
-      @media (max-width: 468px) {
-        
-        
-      
-       }
-    }
     
   }
 

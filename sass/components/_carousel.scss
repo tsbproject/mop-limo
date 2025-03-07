@@ -13,28 +13,27 @@
     filter: brightness(65%);
 
 
-    @include for-small-phone-only {
-      @media (max-width: 468px) {
-       
-       }
-    }
   
-    @include for-phone-only {
-      @media (max-width: 576px) {
-        max-height: 39rem;
-       }
+  
+    
+    
+    @include media-breakpoint-down(xl) {
+      
+    } 
+    
+    
+    
+    @include media-breakpoint-down(lg) {
+      
     }
-    @include for-tablet-portrait-up {
-      @media (max-width: 768px) {
 
-        
-      }
-    }
-    @include for-tablet-landscape-up {
-      @media (max-width: 992px) {
+
+    @include media-breakpoint-down(md) {
+    
+        max-height: 39rem;
        
-       }
     }
+    
     
   }
 
@@ -48,46 +47,40 @@
 
 
 
-  @include for-small-phone-only {
-    @media (max-width: 468px) {
-      
-     }
-  }
+  @include media-breakpoint-down(xl) {
+   
 
-  @include for-phone-only {
-    @media (max-width: 576px) {
+      position: absolute;
+      top: 15rem;
+     
+      text-align: center;
+      
+     
+     
+  }
+  
+ 
+ 
+  @include media-breakpoint-down(lg) {
+      position: absolute;
+      top: 15rem;
+     
+      text-align: center;
+      
+  }
+  
+  
+  @include media-breakpoint-down(md) {
       position: relative;
       top: 50rem;
      
       text-align: center;
      
       
-      
-      
-     }
   }
-  @include for-tablet-portrait-up {
-    @media (max-width: 768px) {
-      position: absolute;
-      top: 15rem;
-     
-      text-align: center;
-      
-
-      
-    }
-  }
-  @include for-tablet-landscape-up {
-    @media (max-width: 992px) {
-
-      position: absolute;
-      top: 15rem;
-     
-      text-align: center;
-      
-     
-     }
-  }
+  
+  
+ 
     
   &__header {
     font-family: "Oxygen" sans-serif;
@@ -96,28 +89,14 @@
     bottom: 53rem;
     color: $color-primary;
 
-    @include for-phone-only {
-      @media (max-width: 576px) {
+    @include media-breakpoint-down(md) {
          font-size: 3rem;
          position: relative;
          bottom: 5rem;
 
-       
-  
-       }
     }
 
-    @include for-tablet-portrait-up {
-      @media (max-width: 768px) {
-  
-        
-      }
-
-    }
-
-   
-
-}
+  }
 
 
   &__description {
@@ -126,24 +105,17 @@
     position: relative;
     bottom: 53rem;
 
-    @include for-phone-only {
-      @media (max-width: 576px) {
-        font-size: 1.3rem;
+    @include media-breakpoint-down(md) {
+         font-size: 1.3rem;
          position: relative;
          bottom: 5rem;
 
          
   
-       }  
+        
    }
 
-   @include for-tablet-portrait-up {
-    @media (max-width: 768px) {
-
-      
-    }
-
-}
+  
 
 
   }
